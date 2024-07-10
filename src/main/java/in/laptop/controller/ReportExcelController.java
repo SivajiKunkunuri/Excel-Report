@@ -25,5 +25,9 @@ public class ReportExcelController {
 		service.generateExcel(resp);
 
 	}
-
+	
+	@GetMapping("/msg")
+	public String getMsg(){
+		String msg = "Good Night";
+	}
 }
