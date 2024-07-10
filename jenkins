@@ -1,0 +1,22 @@
+pipeline {
+	agent any 
+
+	tools{
+		maven 'M3'
+	}
+
+	stages {
+		stage('Git clone'){
+			step ' git url '
+		}
+	}
+	stages {
+		stage('maven package'){
+			step 'mvn clean package'
+		}
+	}
+	stages {
+		stage('Docker Image'){
+			step 'docker build -t <img-name> . '
+		}
+	}
