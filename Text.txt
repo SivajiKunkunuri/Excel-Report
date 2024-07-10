@@ -2,3 +2,5 @@ Docker is a containerization software.
 It is used to simplify our application deployment process.
 
 Containerization is used to application and package...!
+Containerization software is a virtual machine....!
+
